@@ -1,0 +1,26 @@
+{
+  "recommendations": [
+    // Database & SQL
+    "mtxr.sqltools",
+    "mtxr.sqltools-driver-pg",
+    "ms-ossdata.vscode-postgresql",
+    
+    // Docker & Containers
+    "ms-vscode-remote.remote-containers",
+    "ms-azuretools.vscode-docker",
+    
+    // AI Assistants (alternatives)
+    "github.copilot",
+    "codeium.codeium",
+    "tabnine.tabnine-vscode",
+    
+    // General Development
+    "ms-vscode.vscode-json",
+    "redhat.vscode-yaml",
+    "ms-vscode.powershell",
+    
+    // Git Integration
+    "eamodio.gitlens",
+    "donjayamanne.githistory"
+  ]
+}

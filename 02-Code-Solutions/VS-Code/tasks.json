@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Claude Code - SQL Help",
+            "type": "shell",
+            "command": "claude-code",
+            "args": ["help me with SQL optimization"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Docker Compose Up",
+            "type": "shell",
+            "command": "docker-compose",
+            "args": ["up", "-d"],
+            "options": {
+                "cwd": "${workspaceFolder}/02-Code-Solutions/Docker/production-setup"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Connect to PostgreSQL",
+            "type": "shell", 
+            "command": "docker-compose",
+            "args": ["exec", "postgres", "psql", "-U", "student", "-d", "training"],
+            "options": {
+                "cwd": "${workspaceFolder}/02-Code-Solutions/Docker/production-setup"
+            }
+        }
+    ]
+}
